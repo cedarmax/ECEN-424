@@ -15,6 +15,7 @@ class MatrixMultiplier implements Runnable {
     @Override
     public void run() {
         int size = matrixB[0].length;  // Assuming square matrices (20x20)
+	System.out.println("Thread processing rows " + startRow + " to " + (endRow - 1));
         for (int i = startRow; i < endRow; i++) {
             for (int j = 0; j < size; j++) {
                 result[i][j] = 0;
@@ -23,5 +24,6 @@ class MatrixMultiplier implements Runnable {
                 }
             }
         }
+	System.out.println("Thread finished rows " + startRow + " to " + (endRow - 1));
     }
 }
