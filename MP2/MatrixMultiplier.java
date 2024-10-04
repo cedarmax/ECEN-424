@@ -1,3 +1,9 @@
+//ECEN 424 MP2
+//CEDAR MAXWELL + EUGENE ASARE
+//REFERENCES:
+//https://www.geeksforgeeks.org/runnable-interface-in-java/
+//https://www.w3schools.com/java/ref_keyword_this.asp
+
 class MatrixMultiplier implements Runnable {
     private int[][] matrixA;
     private int[][] matrixB;

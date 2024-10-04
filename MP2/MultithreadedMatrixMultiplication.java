@@ -1,3 +1,8 @@
+//ECEN 424 MP2
+//CEDAR MAXWELL + EUGENE ASARE-MENSAH
+//REFERENCES:
+//https://www.w3schools.com/java/java_threads.asp
+
 import java.util.Random;
 
 public class MultithreadedMatrixMultiplication {
@@ -97,7 +102,7 @@ public class MultithreadedMatrixMultiplication {
                 }
             }
         }
-
+	
         if (isCorrect) {
             System.out.println("Multithreaded multiplication is correct!");
         } else {
