@@ -79,7 +79,8 @@ public class MultithreadedMatrixMultiplication {
         }
 
 	// Print the multithreaded result matrix
-        printMatrix(resultMultiThreaded, "Multithreaded Result");
+	System.out.println("Multithreaded Result");
+        printMatrix(resultMultiThreaded);
 
         // Single-threaded multiplication for verification
         resultSingleThreaded = singleThreadedMultiply(matrixA, matrixB);
