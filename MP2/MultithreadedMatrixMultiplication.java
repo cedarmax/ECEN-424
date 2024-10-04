@@ -16,12 +16,11 @@ public class MultithreadedMatrixMultiplication {
         return matrix;
     }
 
-     // Method to print a matrix
-    public static void printMatrix(int[][] matrix, String matrixName) {
-        System.out.println(matrixName + ":");
-        for (int[] row : matrix) {
-            for (int val : row) {
-                System.out.print(val + " ");
+    // Method to print a matrix
+    public static void printMatrix(int[][] matrix) { 
+        for (int i = 0; i < SIZE; i++) {
+            for (int j = 0; j < SIZE; j++) {
+                System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
@@ -49,8 +48,10 @@ public class MultithreadedMatrixMultiplication {
         int[][] resultSingleThreaded;
 
 	 // Print generated matrices
-        printMatrix(matrixA, "Matrix A");
-        printMatrix(matrixB, "Matrix B");
+	System.out.println("Matrix A:");
+        printMatrix(matrixA);
+	System.out.println("Matrix B:");
+        printMatrix(matrixB);
 
         // Create 5 threads for matrix multiplication
         Thread[] threads = new Thread[5];
