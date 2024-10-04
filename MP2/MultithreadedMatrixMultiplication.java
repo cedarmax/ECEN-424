@@ -42,7 +42,12 @@ public class MultithreadedMatrixMultiplication {
 
         for (int i = 0; i < 5; i++) {
             int startRow = i * rowsPerThread;
-            int endRow = (i == 4) ? SIZE : startRow + rowsPerThread;
+	    int endRow;
+		if (i == 4) {
+			endRow = SIZE;
+		} else {
+			endRow = startRow + rowsPerThread;
+		}
             threads[i] = new Thread(new MatrixMultiplier(matrixA, matrixB, resultMultiThreaded, startRow, endRow));
             threads[i].start();
         }
