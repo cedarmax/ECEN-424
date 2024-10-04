@@ -84,6 +84,8 @@ public class MultithreadedMatrixMultiplication {
 
         // Single-threaded multiplication for verification
         resultSingleThreaded = singleThreadedMultiply(matrixA, matrixB);
+	System.out.println("Singlethreaded Result");
+	printMatrix(resultSingleThreaded);
 
         // Verify the results
         boolean isCorrect = true;
