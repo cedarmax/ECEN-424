@@ -4,7 +4,7 @@ import java.net.*;
 public class NaiveClient {
     public static void main(String[] args) throws IOException {
         if (args.length != 2) {
-            System.out.println("Usage: java NaiveClient <server ip> <server port>");
+            System.out.println("Incorrect input.  Please run as follows: java NaiveClient <server ip> <server port>");
             return;
         }
 
